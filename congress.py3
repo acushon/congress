@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 # Control variables
 base_url='https://www.congress.gov/members?q={"congress":%s}&pageSize=250%s'  #Base url for later substitution
 pages=['','&page=2','&page=3']                                                #Pages to collect
-congresses=[89,90,91,92,93,94,95,96,97,98,99]                                 #List of congresses to get data for
+congresses=[88,89,90,91,92,93,94,95,96,97,98]                                 #List of congresses to get data for
 ignore={'State:','Party:'}                                                    #Do not process elements with these contents
 remove={'District:','Served:'}                                                #Remove these headers and data from elements
 remove_append={'Representative':'House','Senator':'Senate'}                   #Rules for deriving house or senate from title
