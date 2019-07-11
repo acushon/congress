@@ -12,6 +12,7 @@ python3 ./congress.py3
 You can alter the behavior of the program using the control variables
 
 ### Control variables
+---
 base_url='https://www.congress.gov/members?q={"congress":%s}&pageSize=250%s'  #Base url for later substitution
 pages=['','&page=2','&page=3']                                                #Pages to collect:  I haven't needed more than three pages but I only pulled the congresses listed
 congresses=[89,90,91,92,93,94,95,96,97,98,99]                                 #List of congresses to get data for:  Add or remove as needed
@@ -20,6 +21,7 @@ remove={'District:','Served:'}                                                #R
 remove_append={'Representative':'House','Senator':'Senate'}                   #Rules for deriving house or senate from title:  Parses member "title" and determines "Chamber" column.
 header=('Congress','Number','Chamber','Name','State','Party')                 #Fields output from processing:  Header for the csv file.
 output_filename="./congress.csv"                                              #Output file for results: Desination for output
+---
 
 ### Prerequisites
 
